@@ -8,6 +8,7 @@
     /* background-color: lightgoldenrodyellow; */
 }
 
+
 .container-ny {
     position:relative;
     display:flex;
@@ -66,7 +67,6 @@
 .nav {
     position: absolute;
     bottom: 10px;
-    
     background-color: rgba(0,0,0,0.4);
     padding:5px;
     border-radius: 10px;
@@ -77,20 +77,19 @@
 }
 .nav-left{
     left: 25%;
-    transform: translateX(-25%);
-    -webkit-transform: translateX(-25%);
-    -moz-transform: translateX(-25%);
-    -ms-transform: translateX(-25%);
-    -o-transform: translateX(-25%);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 .nav-right {
-    right: 25%;
-    transform: translateX(-25%);
-    -webkit-transform: translateX(-25%);
-    -moz-transform: translateX(-25%);
-    -ms-transform: translateX(-25%);
-    -o-transform: translateX(-25%);
-
+    left: 75%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 .nav i {
     color:white;
