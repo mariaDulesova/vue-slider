@@ -9,39 +9,47 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Vue Script -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div id="root">
+
+        <!-- New Yourk -->
         <div class="container-ny">
             <div class="prev">
-                <i class="fas fa-chevron-circle-left"></i>
+                <i @click = "prevImgNy"
+                class="fas fa-chevron-circle-left"></i>
             </div>
             <div class="slide">
-                <img src="img/london-1.png" alt="London">
+                <img :src="imagesNy[imageIndexNy]" alt="New-York">
             </div>
             <div class="next">
-                <i class="fas fa-chevron-circle-right"></i>
+                <i @click="nextImgNy"
+                class="fas fa-chevron-circle-right"></i>
             </div>
             <div class="nav-left nav">
                 <i class="far fa-circle active"></i>
             </div>
         </div>
+        <!-- /New Yourk -->
+        <!-- London -->
         <div class="container-ln">
             <div class="prev">
-                <i class="fas fa-chevron-circle-left"></i>
+                <i @click = "prevImgLn" class="fas fa-chevron-circle-left"></i>
             </div>
             <div class="slide">
-                <img src="img/new-york-1.png" alt="NY">
+                <img v-bind:src="imagesLn[imageIndexLn]" alt="London">
             </div>
             <div class="next">
-                <i class="fas fa-chevron-circle-right"></i>
+                <i @click = "nextImgLn" class="fas fa-chevron-circle-right"></i>
             </div>
             <div class="nav-right nav">
                 <i class="far fa-circle active"></i>
             </div>
         </div>
+        <!-- /London -->
 
     </div>
     
