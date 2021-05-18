@@ -31,8 +31,13 @@
     justify-content: center;
     align-items: center;
 }
-h2{
+
+.text-left{
     margin-left: 100px;
+}
+
+.text-right{
+    margin-right:100px;
 }
 
 .prev,

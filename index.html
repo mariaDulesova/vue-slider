@@ -34,18 +34,24 @@
                     class="fa-circle" @click="imageIndexNy = index" ></i>
                    <!-- <i class="far fa-circle active"></i> -->
             </div>
-            <div class="text">
+            <div class="text text-left">
                 <h2>Bonus 1</h2>
             </div>   
         </div>
         <!-- /New Yourk -->
         <!-- London -->
         <div class="container-ln">
+            <div class="text text-right">
+                <h2>Bonus 2</h2>
+            </div> 
             <div class="prev">
                 <i @click = "prevImgLn" class="fas fa-chevron-circle-left"></i>
             </div>
             <div class="slide">
-                <img v-bind:src="imagesLn[imageIndexLn]" alt="London">
+                <img v-bind:src="imagesLn[imageIndexLn]" 
+                v-on:mouseover="stopRotation"
+                v-on:mouseout="startRotation"
+                alt="London">
             </div>
             <div class="next">
                 <i @click = "nextImgLn" class="fas fa-chevron-circle-right"></i>
@@ -56,6 +62,7 @@
                     class="fa-circle" @click="imageIndexLn = index"></i>
                 <!-- <i class="far fa-circle active"></i> -->
             </div>
+            
         </div>
         <!-- /London -->
 

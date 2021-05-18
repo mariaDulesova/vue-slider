@@ -14,8 +14,13 @@ var app = new Vue(
                 "https://image.newyorkcity.it/wp-content/uploads/2012/09/Times-Square-in-New-York.jpg"
             ],
             imageIndexLn: 0,
-            imageIndexNy: 0
+            imageIndexNy: 0,
+            timer:null
         },
+        
+        mounted: function () {
+            this.startRotation();
+            },
         methods: {
             prevImgLn: function () {
                 this.imageIndexLn--;
@@ -41,9 +46,16 @@ var app = new Vue(
                     this.imageIndexNy = 0;
                 }
             },
-            // changeImg(imageIndexLn) {
-            //     this.imageIndexLn = imageIndexLn;
-            // }
+            startRotation: function() {
+                this.timer = setInterval(this.nextImgLn, 3000);
+            },
+            stopRotation: function() {
+                clearTimeout(this.timer);
+                this.timer = null;
+                },
+            
+
         }
+       
     }
 )
