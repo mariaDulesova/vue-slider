@@ -3,10 +3,10 @@ var app = new Vue(
         el: "#root",
         data:{
             imagesLn:[
-                "https://cdn.londonandpartners.com/-/media/images/london/visit/things-to-do/sightseeing/london-attractions/tower-bridge/thames_copyright_visitlondon_antoinebuchet640x360.jpg?mw=640&hash=27AEBE2D1B7279A196CC1B4548638A9679BE107A",
-                "https://i1.wp.com/alessandrosicurocomunication.com/wp-content/uploads/2020/10/https___www.history.com_.image_MTYyNDg1MjE3MTI1Mjc5Mzk4_topic-london-gettyimages-760251843-promo.jpg?fit=1920%2C1080&ssl=1",
-                "https://www.londonstayuk.com/wp-content/uploads/2019/12/Public-Transport-London.jpg",
-                "https://www.londra.today/wp-content/uploads/2019/06/london-eye-1.jpeg"
+                "img/london-1.png",
+                "img/london-2.png",
+                "img/london-3.png",
+                "img/london-4.png",
             ],
             imagesNy: [
                 "https://static2-viaggi.corriereobjects.it/wp-content/uploads/2019/10/b-C1_GettyImages-1065697748_16783DB8796_5328346-1024x827.jpg?v=352311",
@@ -21,6 +21,7 @@ var app = new Vue(
         mounted: function () {
             this.startRotation();
             },
+            
         methods: {
             prevImgLn: function () {
                 this.imageIndexLn--;
