@@ -26,6 +26,15 @@
     background-color: lightblue;
 }
 
+.text {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    margin-left: 100px;
+}
+
 .prev,
 .next{
     display:flex;
@@ -93,6 +102,7 @@
 }
 .nav i {
     color:white;
+    cursor: pointer;
 }
 
 

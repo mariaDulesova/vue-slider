@@ -40,7 +40,10 @@ var app = new Vue(
                 if(this.imageIndexNy == this.imagesNy.length) {
                     this.imageIndexNy = 0;
                 }
-            }
+            },
+            // changeImg(imageIndexLn) {
+            //     this.imageIndexLn = imageIndexLn;
+            // }
         }
     }
 )
